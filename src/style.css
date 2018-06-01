@@ -1,0 +1,191 @@
+#root {
+  background-image: url("marble.png");
+  width: 100%;
+  height: 10000px;
+  font-family: 'Courgette', cursive;
+}
+
+.flex-container {
+  display: flex;
+  height: 100%;
+  flex-wrap: wrap;
+}
+
+.words {
+  text-align: center;
+}
+
+.info {
+  background-color: grey;
+  padding-left: 20px;
+  padding-right: 20px;
+  justify-content: center;
+}
+
+.fancy {
+  margin-top: 25px;
+  -moz-box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: 35%;
+  background-image: linear-gradient(rgb(209, 215, 218), rgb(153, 186, 197));
+}
+
+#contact {
+  position: fixed;
+  align-self: flex-start;
+  margin: 10px;
+  -webkit-animation: glowing 1500ms infinite;
+  -moz-animation: glowing 1500ms infinite;
+  -o-animation: glowing 1500ms infinite;
+  animation: glowing 1500ms infinite;
+
+  /* text styles */
+  font-weight: 100;
+  font-family: 'Courgette', cursive;
+  font-size: 100%
+}
+
+@-webkit-keyframes glowing {
+  0% {
+    background-color: rgb(116, 174, 197);
+    -webkit-box-shadow: 0 0 3px rgb(116, 174, 197);
+  }
+  50% {
+    background-color: rgb(215, 236, 235);
+    -webkit-box-shadow: 0 0 40px rgb(215, 236, 235);
+  }
+  100% {
+    background-color: rgb(116, 174, 197);
+    -webkit-box-shadow: 0 0 3px rgb(116, 174, 197);
+  }
+}
+
+@-moz-keyframes glowing {
+  0% {
+    background-color: rgb(116, 174, 197);
+    -moz-box-shadow: 0 0 3px rgb(116, 174, 197);
+  }
+  50% {
+    background-color: rgb(215, 236, 235);
+    -moz-box-shadow: 0 0 40px rgb(215, 236, 235);
+  }
+  100% {
+    background-color: rgb(116, 174, 197);
+    -moz-box-shadow: 0 0 3px rgb(116, 174, 197);
+  }
+}
+
+@-o-keyframes glowing {
+  0% {
+    background-color: rgb(116, 174, 197);
+    box-shadow: 0 0 3px rgb(116, 174, 197);
+  }
+  50% {
+    background-color: rgb(215, 236, 235);
+    box-shadow: 0 0 40px rgb(215, 236, 235);
+  }
+  100% {
+    background-color: rgb(116, 174, 197);
+    box-shadow: 0 0 3px rgb(116, 174, 197);
+  }
+}
+
+@keyframes glowing {
+  0% {
+    background-color: rgb(116, 174, 197);
+    box-shadow: 0 0 3px rgb(116, 174, 197);
+  }
+  50% {
+    background-color: rgb(215, 236, 235);
+    box-shadow: 0 0 40px rgb(215, 236, 235);
+  }
+  100% {
+    background-color: rgb(116, 174, 197);
+    box-shadow: 0 0 3px rgb(116, 174, 197);
+  }
+}
+
+#contact:hover {
+  -webkit-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  transform: scale(1.3);
+  margin-left: 40px;
+  margin-top: 30px;
+  background-image: linear-gradient( rgb(153, 186, 197), rgb(209, 215, 218));
+  font-family: 'Oswald', sans-serif;
+}
+
+#name {
+  height: 175px;
+}
+
+.form-style-9 {
+  max-width: 450px;
+  background: #fafafa;
+  padding: 30px;
+  margin: 50px auto;
+  box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.35);
+  border-radius: 10px;
+  border: 6px solid #305a72;
+  height: 300px
+}
+.form-style-9 ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.form-style-9 ul li {
+  display: block;
+  margin-bottom: 10px;
+  min-height: 35px;
+}
+.form-style-9 ul li .field-style {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  padding: 8px;
+  outline: none;
+  border: 1px solid #b0cfe0;
+}
+.form-style-9 ul li .field-style:focus {
+  box-shadow: 0 0 5px #b0cfe0;
+  border: 1px solid #b0cfe0;
+}
+.form-style-9 ul li .field-split {
+  width: 49%;
+}
+.form-style-9 ul li .field-full {
+  width: 100%;
+}
+.form-style-9 ul li input.align-left {
+  float: left;
+}
+.form-style-9 ul li input.align-right {
+  float: right;
+}
+.form-style-9 ul li textarea {
+  width: 100%;
+  height: 100px;
+}
+.form-style-9 ul li input[type="button"],
+.form-style-9 ul li input[type="submit"] {
+  -moz-box-shadow: inset 0px 1px 0px 0px #3985b1;
+  -webkit-box-shadow: inset 0px 1px 0px 0px #3985b1;
+  box-shadow: inset 0px 1px 0px 0px #3985b1;
+  background-color: #216288;
+  border: 1px solid #17445e;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  padding: 8px 18px;
+  text-decoration: none;
+  font: 12px Arial, Helvetica, sans-serif;
+}
+.form-style-9 ul li input[type="button"]:hover,
+.form-style-9 ul li input[type="submit"]:hover {
+  background: linear-gradient(to bottom, #2d77a2 5%, #337da8 100%);
+  background-color: #28739e;
+}
